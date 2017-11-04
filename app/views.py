@@ -11,4 +11,4 @@ app.config.from_pyfile('config.py')
     
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("index.html", title="Welcome")
