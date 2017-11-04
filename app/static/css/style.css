@@ -1,0 +1,104 @@
+/* Body, Html */
+body, html {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    background: url(../img/intro-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(99, 211, 24, 0.7);
+    color: #000;
+  }
+  
+  body, h1, h2, h3 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+  }
+  
+  /* Tempales Name/Logo */
+   nav > .navbar-brand {
+    font-family: 'Great Vibes';
+    color: #9E0404;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+    font-size: 2.5em;
+    font-weight: 700;
+    padding-top:10px;  
+   }
+  
+   nav > .navbar-brand:hover {
+    color: #166402;  
+   }
+  
+   nav #nav-content .nav-tabs .nav-item .nav-link {
+    color:#9E0404;
+  }
+  
+   nav #nav-content .nav-tabs .nav-item #active {
+   color:#85F307; 
+   background-color: #9E0404;
+  }
+  
+  nav #nav-content .nav-tabs .nav-item .nav-link:hover {
+    color:#85F307;
+    background-color: #9E0404;
+  }
+  
+  
+   
+  /* Basic Body Content Structre */
+  .intro-header {
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #f8f8f8;
+    background-size: cover;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .intro-message {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 4em;
+  }
+  
+  .intro-message > h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 2em;
+    color: #85F307;
+  }
+  
+  
+  li > a:hover {
+    color: #166402;
+  }
+  
+  
+  
+  /* Footer */
+  .footer .inner {
+    text-align: center;
+    padding: 30px 0;
+    align-content: center;
+    background-color: rgba(126, 129, 63, 0.77);
+  }
+  
+  .footer .inner p {
+    color:#9E0404;
+  }
+  
+  .footer .inner p a {
+    color: #85F307;
+  }
+  
