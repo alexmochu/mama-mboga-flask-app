@@ -1,7 +1,7 @@
 # app/views.py
 
 from flask import Flask, render_template
-from flask_login import LoginManager
+from flask_login import LoginManager, login_required
 
 # local imports
 from config import app_config
@@ -19,3 +19,11 @@ login_manager.login_view = "login"
 @app.route('/')
 def index():
     return render_template("index.html", title="Welcome")
+
+@app.route('/dashboard')
+@login_required
+def dashboard():
+    """
+    Render the dashboard template on the /dashboard route
+    """
+    return render_template("dashboard.html", title="Dashboard")
