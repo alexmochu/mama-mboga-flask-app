@@ -35,19 +35,25 @@
               <div class="collapse navbar-collapse" id="nav-content">   
                 <ul class="nav nav-tabs mr-auto">
                   <li class="nav-item">
-                    <a class="nav-link" id="active" href="#">Home</a>
+                    <a class="nav-link" id="active" href="{{ url_for('index') }}">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="lists.html#">Lists</a>
                   </li>
                 </ul>
                 <ul class="nav nav-tabs ml-auto">
+                    {% if current_user.is_authenticated %}
+                    <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                    <li><a href="#">Logout</a></li>
+                    <li><a><i class="fa fa-user"></i>  Hi, {{ current_user.name }}!</a></li>
+                  {% else %}
                     <li class="nav-item">
-                    <a class="nav-link" href="register.html">Sign Up</a>
+                    <a class="nav-link" href="{{ url_for('signup') }}">Sign Up</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="{{ url_for('login') }}">Login</a>
                     </li>
+                  {% endif %}
                     </ul>
               </div>
             
